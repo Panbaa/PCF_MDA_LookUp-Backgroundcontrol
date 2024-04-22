@@ -1,0 +1,86 @@
+:root {
+    --backgroundColor: ;
+}
+
+#lookUp {
+    border: 1px solid white;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    background-color: var(--backgroundColor);
+    padding: 10px;
+    position: relative;
+    box-sizing: border-box;
+    min-height: 41px;
+}
+
+#lookUp:hover {
+    border: 1px solid black;
+    background-color: white;
+    padding: 4px 9px 4px 4px;
+}
+
+#lookUp:hover #lookUpItem {
+    border: 1px solid black;
+    border-radius: 3px;
+    background-color: var(--backgroundColor);
+    font-weight: 400;
+    padding: 5px;
+}
+
+#lookUp:hover #lookUpIcon {
+    display: block;
+}
+#lookUp:hover #lookUpDeleteButton {
+    display: inline-block;
+}
+
+#lookUpLabel {
+    padding-right: 10px;
+    font-weight: 600;
+}
+
+#lookUpIcon {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%) scaleX(-1);
+    width: 2rem;
+    height: 2rem;
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/5/55/Magnifying_glass_icon.svg");
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: none;
+}
+
+#lookUpButton {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 10;
+}
+
+#lookUpDeleteButton {
+    position: relative;
+    z-index: 20;
+    border-style: none;
+    background-color: transparent;
+    width: auto;
+    height: 19px;
+    display: none;
+    cursor: pointer;
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/c/ca/Transparent_X.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#lookUpItem {
+    display: flex;
+    align-items: center;
+}

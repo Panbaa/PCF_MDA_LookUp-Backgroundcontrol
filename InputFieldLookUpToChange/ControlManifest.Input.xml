@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest>
+  <control namespace="InputFieldLookUpToChange" constructor="InputFieldLookUpToChange" version="0.0.41" display-name-key="InputFieldLookUpToChange" description-key="InputFieldLookUpToChange description" control-type="standard">
+    <property name="controlValue" display-name-key="LookUp_Table" description-key="controlValue_Desc_Key" of-type="Lookup.Simple" usage="bound" required="true" />
+    <property name="ColorInRGB" display-name-key="Backgroundcolor" description-key="Enter Color in rgb(zzz,yyy,xxx)" of-type="SingleLine.Text" usage="input" required="true" />
+    <resources>
+      <code path="index.ts" order="1" />
+      <css path="style.css" order="1" />
+    </resources>
+    <feature-usage>
+      <uses-feature name="Utility" required="true" />
+    </feature-usage>
+  </control>
+</manifest>
